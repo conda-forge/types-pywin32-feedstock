@@ -1,5 +1,6 @@
 {% set name = "types-pywin32" %}
 {% set version = "308.0.0.20241121" %}
+{% set python_min = "3.8 %}
 
 package:
   name: {{ name|lower }}
@@ -16,11 +17,11 @@ build:
 
 requirements:
   host:
-    - python 3.8
+    - python {{ python_min }}
     - pip
     - setuptools
   run:
-    - python >=3.8
+    - python >={{ python_min }}
 
 test:
   commands:
@@ -28,7 +29,7 @@ test:
     - test -f $SP_DIR/win32-stubs/__init__.pyi  # [unix]
     - if not exist %SP_DIR%\\win32-stubs\\__init__.pyi exit 1  # [win]
   requires:
-    - python 3.8
+    - python {{ python_min }}
     - pip
 
 about:
