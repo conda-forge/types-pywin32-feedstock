@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
   sha256: 2605a0666c470a2861df4fca261ddcc1af04c2f53833f09e657487fc27e1f4e9
 
 build:
@@ -16,7 +16,7 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python 3.8
     - pip
     - setuptools
   run:
@@ -28,6 +28,7 @@ test:
     - test -f $SP_DIR/win32-stubs/__init__.pyi  # [unix]
     - if not exist %SP_DIR%\\win32-stubs\\__init__.pyi exit 1  # [win]
   requires:
+    - python 3.8
     - pip
 
 about:
