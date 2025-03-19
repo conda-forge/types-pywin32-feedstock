@@ -1,5 +1,5 @@
 {% set name = "types-pywin32" %}
-{% set version = "309.0.0.20250311" %}
+{% set version = "310.0.0.20250319" %}
 {% set python_min = "3.9" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 36a8ef10b1d2a50f27d46066d36ed811bb2f322e855786c7f9c940762208b524
+  sha256: 4d28fb85b3f268a92905a7242df48c530c847cfe4cdb112386101ab6407660d8
 
 build:
   noarch: python
