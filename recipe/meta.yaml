@@ -1,6 +1,6 @@
 {% set name = "types-pywin32" %}
 {% set version = "311.0.0.20260316" %}
-{% set python_min = "3.9" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
