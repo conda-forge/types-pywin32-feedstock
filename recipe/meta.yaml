@@ -1,5 +1,5 @@
 {% set name = "types-pywin32" %}
-{% set version = "312.0.0.20261104" %}
+{% set version = "312.0.0.20261122" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 2944bdb1ce11397eb78c4a0ff031d18c9871730aed111b1cc1c872e6c854eccc
+  sha256: a44196d320cb8311278201fdb29200b4b418f411e28d859e8a4d0313c1b31b93
 
 build:
   noarch: python
